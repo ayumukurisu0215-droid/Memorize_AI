@@ -40,6 +40,7 @@ graph TD
     Gemini -->|4. 回答生成| App
     App -->|5. 会話ペアを保存 Save| ChromaDB
     App -->|6. 回答| User
+```
 
 ## 📦 機能 (Features)
 

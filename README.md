@@ -34,14 +34,12 @@
 ```mermaid
 graph TD
     User[ユーザー] -->|発言| App[Python アプリケーション]
-    App -->|1. 意味検索 (Retrieve)| ChromaDB[(ChromaDB\nベクトル記憶)]
+    App -->|1. 意味検索 Retrieve| ChromaDB[(ChromaDB\nベクトル記憶)]
     ChromaDB -->|2. 関連する過去ログ| App
-    App -->|3. プロンプト構築 (発言 + 過去ログ)| Gemini[Google Gemini API]
+    App -->|3. プロンプト構築| Gemini[Google Gemini API]
     Gemini -->|4. 回答生成| App
-    App -->|5. 会話ペアをベクトル化して保存 (Save)| ChromaDB
+    App -->|5. 会話ペアを保存 Save| ChromaDB
     App -->|6. 回答| User
-
-```
 
 ## 📦 機能 (Features)
 

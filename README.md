@@ -81,7 +81,7 @@ os.environ["GOOGLE_API_KEY"] = "your-api-key-here"
 ### 実行
 
 ```bash
-python memory_bot.py
+python main.py
 
 ```
 
